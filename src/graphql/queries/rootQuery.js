@@ -1,12 +1,12 @@
 const { GraphQLObjectType } =  require('graphql');
-const queryAllUsers = require('./queryAllUsers')
-const queryUserById = require('./queryUserById');
+const users = require('./queryAllUsers')
+const userById = require('./queryUserById');
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
-    queryUserById,
-    queryAllUsers,
+    userById,
+    users,
   }
 })
 
